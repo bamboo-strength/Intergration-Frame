@@ -6,7 +6,7 @@ const MyIcon = Icon.createFromIconfontCN({
   scriptUrl: IconFontJs // iconfont
 });
 
-const DEFAULT_ICON = 'gongzuotai1';
+const DEFAULT_ICON = 'home-page';
 
 export default {
   name: 'LayoutMenu',

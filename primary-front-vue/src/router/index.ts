@@ -42,8 +42,8 @@ export const staticRoutes: RouteConfig[] = [
   {
     path: '/portal',
     children: [
-      { path: 'math', name: 'math', meta: { title: '首页', reuse: true, affix: true } },
-      { path: 'dashboard', name: 'dashboard', meta: { title: '附属页', reuse: true, affix: false } }
+      { path: 'math', name: 'math', meta: { title: '首页', reuse: true, affix: true, icon: 'home-page' } },
+      { path: 'dashboard', name: 'dashboard', meta: { title: '附属页', reuse: true, affix: false, icon: 'workbench' } }
     ]
   },
   {
@@ -57,7 +57,8 @@ export const staticRoutes: RouteConfig[] = [
         meta: {
           title: '编辑器',
           reuse: true,
-          affix: false
+          affix: false,
+          icon: 'user-light'
         }
       }
     ]
