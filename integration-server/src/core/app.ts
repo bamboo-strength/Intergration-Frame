@@ -3,8 +3,6 @@ import { json, urlencoded } from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import routes from '../routes';
-import mongoose from 'mongoose';
-import { DB_URL } from '../utils/global-variable';
 
 class App {
     public app: express.Application;
@@ -28,11 +26,6 @@ class App {
         }));
         // 支持日志中间件
         this.app.use(morgan('dev'));
-    }
-
-    private setMongoConfig() {
-        mongoose.Promise = global.Promise;
-        mongoose.connect(DB_URL)
     }
 }
 

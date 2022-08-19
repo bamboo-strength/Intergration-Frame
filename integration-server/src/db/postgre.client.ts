@@ -20,7 +20,7 @@ class PostgreClient {
             max: 20
         }
 
-        return new pg.Pool(config);
+        return new pg.Pool(config); 
     }
 }
 
